@@ -6,8 +6,8 @@ const Navbar = () => {
 
   return (
     <div className="flex flex-row items-center justify-between h-28">
-      <a href="/" className="logo lg:ml-10">
-        <img src={logo} alt="" height="65%" width="65%" />
+      <a href="/" className="pl-7 logo lg:ml-10">
+        <img src={logo} alt="logo" height="65%" width="65%" />
       </a>
 
       {/* mobile nav */}
@@ -35,7 +35,7 @@ const Navbar = () => {
       {openNav && (
         <div className="absolute top-0 w-full h-48 bg-white">
           <div onClick={() => setOpenNav(false)} className="absolute right-12 top-9">
-            <img src={closeIcon} alt="" height="65%" width="65%" />
+            <img src={closeIcon} alt="" height="30" width="30" />
           </div>
           <div className="flex items-center flex-col justify-around h-full pt-5">
             <a
